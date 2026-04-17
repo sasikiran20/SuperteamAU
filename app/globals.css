@@ -1,0 +1,235 @@
+@import "tailwindcss";
+
+:root {
+  --background: #100B0A;
+  --foreground: #F5EDE6;
+  --primary: #B54B33;
+  --secondary: #00A896;
+  --accent: #E1C699;
+  --muted: #1E1412;
+  --muted-foreground: #9A8A78;
+  --border: #2E211A;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --font-sans: var(--font-archivo);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  font-stretch: semi-expanded;
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.community-gallery {
+  height: 160vh;
+}
+
+.community-gallery-wrapper {
+  height: 100%;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.community-col-1 {
+  top: -30%;
+}
+
+.community-col-2 {
+  top: -55%;
+}
+
+.community-col-3 {
+  top: -40%;
+}
+
+:root {
+  --footer-h: 750px;
+}
+
+@media (min-width: 640px) {
+  :root {
+    --footer-h: 800px;
+  }
+}
+
+@media (min-width: 768px) {
+  :root {
+    --footer-h: 550px;
+  }
+}
+
+@supports (padding: env(safe-area-inset-bottom)) {
+  .pb-safe {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+  .pt-safe {
+    padding-top: env(safe-area-inset-top);
+  }
+}
+
+@property --cta-angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.cta-gradient-border {
+  background: conic-gradient(
+    from var(--cta-angle),
+    transparent 20%,
+    var(--primary) 32%,
+    var(--accent) 50%,
+    var(--secondary) 68%,
+    transparent 80%
+  );
+  animation: cta-spin 6s linear infinite;
+}
+
+@keyframes cta-spin {
+  to {
+    --cta-angle: 360deg;
+  }
+}
+
+@media (max-width: 767px) {
+  .community-gallery {
+    height: auto;
+    overflow: visible;
+  }
+
+  .community-gallery-wrapper {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .community-col-1,
+  .community-col-2,
+  .community-col-3 {
+    top: 0;
+    transform: none !important;
+  }
+}
+
+.perspective-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.75s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.perspective-text span {
+  transition: all 0.75s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.perspective-text span:nth-of-type(2) {
+  position: absolute;
+  transform-origin: bottom center;
+  transform: rotateX(-90deg) translateY(9px);
+  opacity: 0;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .menu-el:hover .perspective-text {
+    transform: rotateX(90deg);
+  }
+
+  .menu-el:hover .perspective-text span:nth-of-type(1) {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  .menu-el:hover .perspective-text span:nth-of-type(2) {
+    opacity: 1;
+  }
+}
+
+@keyframes spin-slow {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 12s linear infinite;
+}
+
+.group:hover .animate-spin-slow {
+  animation-duration: 6s;
+}
+
+.luma-checkout--overlay {
+  backdrop-filter: blur(8px) !important;
+  background: rgba(16, 11, 10, 0.75) !important;
+}
+
+.luma-checkout--modal {
+  border-radius: 20px !important;
+  overflow: hidden !important;
+  box-shadow:
+    0 24px 80px rgba(0, 0, 0, 0.6),
+    0 0 0 1px rgba(46, 33, 26, 0.5) !important;
+}
+
+.luma-checkout--close-btn {
+  background: rgba(30, 20, 18, 0.8) !important;
+  border: 1px solid rgba(46, 33, 26, 0.6) !important;
+  border-radius: 50% !important;
+  backdrop-filter: blur(12px) !important;
+}
+
+.luma-checkout--close-btn:hover {
+  background: rgba(46, 33, 26, 0.9) !important;
+}
+
+.luma-checkout--close-btn img {
+  filter: invert(1) !important;
+}
+
+.luma-checkout--by {
+  color: rgba(154, 138, 120, 0.7) !important;
+}
+
+.luma-checkout--by a {
+  color: var(--accent) !important;
+}
