@@ -85,7 +85,7 @@ Every colour was chosen to evoke a sense of place — so that the moment you lan
 ```
 ┌─────────────────────────────────────────────────────────────────────┐
 │                         AWS AMPLIFY (CDN + CI/CD)                   │
-│                   main.d3kyeux0r806ao.amplifyapp.com                │
+│                   main.d3kyz81mk7nvl4.amplifyapp.com                │
 └──────────────────────────────┬──────────────────────────────────────┘
                                │
                                ▼
