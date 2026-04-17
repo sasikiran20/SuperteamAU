@@ -37,7 +37,7 @@ function FooterContent() {
             </h3>
             <p className="mb-4 text-sm leading-relaxed text-muted-foreground">
               Accelerating builders, founders, creatives and institutions
-              working towards internet capital markets on Solana.
+              working towards Solana Ecosystem.
             </p>
             <a
               href="https://superteam.fun"

@@ -5,7 +5,7 @@
 <h1 align="center">Superteam Australia</h1>
 
 <p align="center">
-  <strong>Accelerating builders, founders, and creatives working towards internet capital markets on Solana — rooted in the spirit of Australia.</strong>
+  <strong>Accelerating builders, founders, and creatives working towards Solana Ecosystem — rooted in the spirit of Australia.</strong>
 </p>
 
 <p align="center">

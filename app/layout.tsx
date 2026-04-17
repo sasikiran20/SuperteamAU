@@ -20,18 +20,18 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Superteam Australia | Building Solana in Australia",
   description:
-    "Accelerating builders, founders, creatives and institutions working towards internet capital markets on Solana in Australia.",
+    "Accelerating builders, founders, creatives and institutions working towards Solana Ecosystem in Australia.",
   openGraph: {
     title: "Superteam Australia",
     description:
-      "Accelerating builders, founders, creatives and institutions working towards internet capital markets on Solana.",
+      "Accelerating builders, founders, creatives and institutions working towards Solana Ecosystem.",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: "Superteam Australia",
     description:
-      "Accelerating builders, founders, creatives and institutions working towards internet capital markets on Solana.",
+      "Accelerating builders, founders, creatives and institutions working towards Solana Ecosystem.",
   },
 };
 
