@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="https://main.d3kyeux0r806ao.amplifyapp.com/">🌏 Live Demo</a> &nbsp;·&nbsp;
+  <a href="https://main.d3kyz81mk7nvl4.amplifyapp.com/">🌏 Live Demo</a> &nbsp;·&nbsp;
   <a href="#-tech-stack">Tech Stack</a> &nbsp;·&nbsp;
   <a href="#-getting-started">Getting Started</a> &nbsp;·&nbsp;
   <a href="#-architecture">Architecture</a> &nbsp;·&nbsp;
@@ -230,7 +230,11 @@ npm start
 
 This project is deployed on **AWS Amplify** with automatic CI/CD from the `main` branch.
 
-**Live URL:** [https://main.d3kyeux0r806ao.amplifyapp.com/](https://main.d3kyeux0r806ao.amplifyapp.com/)
+**Live URL:** [https://main.d3kyz81mk7nvl4.amplifyapp.com/](https://main.d3kyz81mk7nvl4.amplifyapp.com/)
+
+**Admin Dashboard:** [https://main.d3kyz81mk7nvl4.amplifyapp.com/admin/login](https://main.d3kyz81mk7nvl4.amplifyapp.com/admin/login)
+- **Username:** `admin`
+- **Password:** `superteam@2026`
 
 ### Amplify Setup
 
