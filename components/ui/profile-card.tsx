@@ -485,7 +485,7 @@ const ProfileCardComponent: React.FC<ProfileCardProps> = ({
   return (
     <div
       ref={wrapRef}
-      className={`relative touch-none ${className}`.trim()}
+      className={`relative ${enableTilt ? 'touch-none' : ''} ${className}`.trim()}
       style={
         {
           perspective: "500px",
